@@ -9,45 +9,34 @@
 # 一、什么是热修复？
 ## 正常开发流程
 
-----------
 ![](/picture/hotfix/1.png)
 
 ##  热修复开发流程
 
-----------
 ![](/picture/hotfix/2.png)
 
 ##  热修复优势
 
-----------
-
 ![](/picture/hotfix/3.png)
 
 ##  修复什么？
-
-----------
 
 ![](/picture/hotfix/4.png)
 
 # 二、热修复框架分类
 ##  现状：百花齐放百家争鸣
 
-----------
 ![](/picture/hotfix/5.png)
 
 ##  简单分类
 
-----------
 ![](/picture/hotfix/6.png)
 
 ##  更合理的分类
 
-----------
 ![](/picture/hotfix/7.png)
 
 # 三、技术原理及特点
-
-
 ## 3.1 阿里Dexposed -- native解决方案 ##
 ### 原理：
 
@@ -178,16 +167,19 @@
 - 美团技术文章：[https://tech.meituan.com/android_autopatch.html](https://tech.meituan.com/android_autopatch.html "Android热更新方案Robust开源，新增自动化补丁工具")
 - Robust源码：[https://github.com/Meituan-Dianping/Robust](https://github.com/Meituan-Dianping/Robust)
 
-
 ## 3.5 微信Tinker ##
 
 ###原理：###
 
 - 服务端做dex差量，将差量包下发到客户端，在ART模式的机型上本地跟原apk中的classes.dex做merge，merge成为一个新的merge.dex后将merge.dex插入pathClassLoader的dexElement，原理类同Q-Zone，为了实现差量包的最小化，Tinker自研了DexDiff/DexMerge算法。Tinker还支持资源和So包的更新，So补丁包使用BsDiff来生成，资源补丁包直接使用文件md5对比来生成，针对资源比较大的（默认大于100KB属于大文件）会使用BsDiff来对文件生成差量补丁。
 
+----------
+
 ![](/picture/hotfix/15.png)
 
 ![](/picture/hotfix/16.png)
+
+----------
 
 ###优点：###
 
@@ -224,17 +216,20 @@
 
 ###优化Andfix（突破底层结构差异，解决稳定性问题）：###
 
+----------
+
 **Andfix底层ArtMethod结构时采用内部变量一一替换，倒是这个各个厂商是会修改的，所以兼容性不好。**
 
 ![](/picture/hotfix/20.png)
 
-----------
 
 **Sophix改变了一下思路，采用整体替换方法结构，忽略底层实现，从而解决兼容稳定性问题。**
 
 ![](/picture/hotfix/19.png)
 
 ###突破QQ和Tinker的缺陷###
+
+----------
 
 **QQ和Tinker的缺陷**
 
@@ -250,6 +245,9 @@
 ![](/picture/hotfix/22.png)
 
 ###资源修复另辟蹊径###
+
+----------
+
 **常用方案（Instant Run技术）：这种方案的兼容问题在于替换AssetManager的地方**
 ![](/picture/hotfix/23.png)
 
@@ -257,6 +255,9 @@
 ![](/picture/hotfix/24.png)
 
 ###SO修复另辟蹊径###
+
+----------
+
 ![](/picture/hotfix/25.png)
 
 # 四、Tinker框架解析
@@ -269,7 +270,7 @@
 
 **这里后续再补一个详细的源码分析，敬请期待**
 
-# 对比图（来自不同的地方）
+# 五、对比图（来自不同的地方）
 ## 来自Tinker的对比
 ![](http://images2017.cnblogs.com/blog/823551/201801/823551-20180119173848396-1135737571.png)
 
@@ -288,6 +289,6 @@
 - Android 热修复专题：支付宝、淘宝、微信、QQ空间、饿了么、美丽说蘑菇街、美团大众点评方案集 [https://zhuanlan.zhihu.com/p/25863920](https://zhuanlan.zhihu.com/p/25863920 "Android 热修复专题：支付宝、淘宝、微信、QQ空间、饿了么、美丽说蘑菇街、美团大众点评方案集合")
 ![](http://images2017.cnblogs.com/blog/823551/201801/823551-20180119174807209-784087153.jpg)
 
-# 总结
+# 六、总结
 
 &emsp;&emsp;如果不考虑增大apk的体积，选择Robust是最稳定的，否则的话选择Tinker是一个不错的方案。虽然阿里Sophix横空出世，但是它不开源，而且商业收费，所以一般不是很赚钱的app选择收费的可能就很小了。不过它确实各方面都做了大量的优化，本文中的很多知识点也来源于阿里的《Android热修复技术原理.pdf》一书，本书值得一读，里面就是基于Sophix框架来编排的。
