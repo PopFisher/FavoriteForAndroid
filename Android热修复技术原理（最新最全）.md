@@ -37,7 +37,7 @@
 ![](/picture/hotfix/7.png)
 
 # 三、技术原理及特点
-## 3.1 阿里Dexposed -- native解决方案 ##
+## 3.1 阿里Dexposed -- native解决方案
 ### 原理：
 
 - 直接在native层进行方法的结构体信息对换，从而实现完美的方法新旧替换，从而实现热修复功能
@@ -77,18 +77,18 @@
 - Dexposed源码：[https://github.com/alibaba/dexposed](https://github.com/alibaba/dexposed)
 - Xposed源码：[https://github.com/rovo89/Xposed](https://github.com/rovo89/Xposed)
 
-## 3.2 阿里AndFix -- native解决方案 ##
-### 原理： ###
+## 3.2 阿里AndFix -- native解决方案
+### 原理：
 
 - 与Dexposed一样都基于开源框架Xposed实现，是一种AOP解决方案
 
-### 优点： ###
+### 优点：
 
 - 即时生效
 - 支持dalvik和art（AndFix supports Android version from 2.3 to 7.0, both ARM and X86 architecture, both Dalvik and ART runtime, both 32bit and 64bit.）
 - 与Dexposed框架相比AndFix框架更加轻便好用，在进行热修复的过程中更加方便了
 
-### 缺点： ###
+### 缺点：
 
 - 面临稳定性与兼容性问题
 - AndFix不支持新增方法，新增类，新增field等
@@ -99,36 +99,36 @@
 
 ![](/picture/hotfix/12.png)
 
-### 相关链接： ###
+### 相关链接： 
 
 - 文章：[https://zhuanlan.zhihu.com/p/23935568](https://zhuanlan.zhihu.com/p/23935568 "Android热修复框架AndFix原理解析及使用")
 - AndFix源码：[https://github.com/alibaba/AndFix](https://github.com/alibaba/AndFix)
 
 
-## 3.3 QQ空间--Dex插桩方案（大众点评的Nuwa参考其实现并开源） ##
-###原理：###
+## 3.3 QQ空间--Dex插桩方案（大众点评的Nuwa参考其实现并开源） 
+### 原理：
 
 - 原理是Hook了ClassLoader.pathList.dexElements[]。因为ClassLoader的findClass是通过遍历dexElements[]中的dex来寻找类的。当然为了支持4.x的机型，需要打包的时候进行插桩。
 - 越靠前的Dex优先被系统使用，基于类级别的修复
 
 ![](/picture/hotfix/13.jpg)
 
-###优点：###
+### 优点：
 
 - 不需要考虑对dalvik虚拟机和art虚拟机做适配
 - 代码是非侵入式的，对apk体积影响不大
 
-###缺点：###
+### 缺点：
 
 - 需要下次启动才会生效
 - 最大挑战在于性能，即Dalvik平台存在插桩导致的性能损耗，Art平台由于地址偏移问题导致补丁包可能过大的问题
 - 虚拟机在安装期间为类打上CLASS_ISPREVERIFIED标志是为了提高性能的，我们强制防止类被打上标志是否会影响性能？这里我们会做一下更加详细的性能测试．但是在大项目中拆分dex的问题已经比较严重，很多类都没有被打上这个标志。
 
-###插桩方案性能上的痛点：###
+### 插桩方案性能上的痛点：
 
 ![](/picture/hotfix/14.png)
 
-###相关链接：###
+### 相关链接：
 
 - 文章：[https://zhuanlan.zhihu.com/magilu/20308548](https://zhuanlan.zhihu.com/magilu/20308548 "安卓App热补丁动态修复技术介绍")
 - 文章：[http://blog.csdn.net/sbsujjbcy/article/details/50812674](http://blog.csdn.net/sbsujjbcy/article/details/50812674 "Android 热修复Nuwa的原理及Gradle插件源码解析")
@@ -136,15 +136,15 @@
 - HotFix源码：[https://github.com/dodola/HotFix](https://github.com/dodola/HotFix)
 - DroidFix源码：[https://github.com/bunnyblue/DroidFix](https://github.com/bunnyblue/DroidFix)
 
-## 3.4 美团Robust -- Instant Run 热插拔原理 ##
-###原理：###
+## 3.4 美团Robust -- Instant Run 热插拔原理
+### 原理：
 
 - Robust插件对每个产品代码的每个函数都在编译打包阶段自动的插入了一段代码，插入过程对业务开发是完全透明
 - 编译打包阶段自动为每个class都增加了一个类型为ChangeQuickRedirect的静态成员，而在每个方法前都插入了使用changeQuickRedirect相关的逻辑，当 changeQuickRedirect不为null时，可能会执行到accessDispatch从而替换掉之前老的逻辑，达到fix的目的。
 
 ![](/picture/hotfix/17.png)
 
-###优点：###
+### 优点：
 
 - 几乎不会影响性能（方法调用，冷启动）
 - 支持Android2.3-8.x版本
@@ -154,22 +154,22 @@
 - 支持增加方法和类
 - 支持ProGuard的混淆、内联、优化等操作
 
-###缺点：###
+### 缺点：
 
 - 代码是侵入式的，会在原有的类中加入相关代码
 - so和资源的替换暂时不支持
 - 会增大apk的体积，平均一个函数会比原来增加17.47个字节，10万个函数会增加1.67M。
 - 会增加少量方法数，使用了Robust插件后，原来能被ProGuard内联的函数不能被内联了
 
-###相关链接：###
+### 相关链接：
 
 - 美团技术文章：[https://tech.meituan.com/android_robust.html](https://tech.meituan.com/android_robust.html "Android热更新方案Robust")
 - 美团技术文章：[https://tech.meituan.com/android_autopatch.html](https://tech.meituan.com/android_autopatch.html "Android热更新方案Robust开源，新增自动化补丁工具")
 - Robust源码：[https://github.com/Meituan-Dianping/Robust](https://github.com/Meituan-Dianping/Robust)
 
-## 3.5 微信Tinker ##
+## 3.5 微信Tinker
 
-###原理：###
+### 原理：
 
 - 服务端做dex差量，将差量包下发到客户端，在ART模式的机型上本地跟原apk中的classes.dex做merge，merge成为一个新的merge.dex后将merge.dex插入pathClassLoader的dexElement，原理类同Q-Zone，为了实现差量包的最小化，Tinker自研了DexDiff/DexMerge算法。Tinker还支持资源和So包的更新，So补丁包使用BsDiff来生成，资源补丁包直接使用文件md5对比来生成，针对资源比较大的（默认大于100KB属于大文件）会使用BsDiff来对文件生成差量补丁。
 
@@ -181,16 +181,16 @@
 
 ----------
 
-###优点：###
+### 优点：
 
 - 支持动态下发代码
 - 支持替换So库以及资源
 
-###缺点：###
+### 缺点：
 
 - 不能即时生效，需要下次启动
 
-###Tinker已知问题：###
+### Tinker已知问题：
 
 - Tinker不支持修改AndroidManifest.xml，Tinker不支持新增四大组件(1.9.0支持新增非export的Activity)；
 - 由于Google Play的开发者条款限制，不建议在GP渠道动态更新代码；
@@ -198,23 +198,23 @@
 - 不支持部分三星android-21机型，加载补丁时会主动抛出"TinkerRuntimeException:checkDexInstall failed"；
 - 对于资源替换，不支持修改remoteView。例如transition动画，notification icon以及桌面图标。
 
-###Tinker性能痛点：###
+### Tinker性能痛点：
 
 - Dex合并内存消耗在vm head上，容易OOM，最后导致合并失败。
 - 如果本身app占用内存已经比较高，可能容易导致app本系统杀掉。
 
-###相关链接：###
+### 相关链接：
 
 - 文章：[http://geek.csdn.net/news/detail/104000](http://geek.csdn.net/news/detail/104000 "微信 Tinker 的一切都在这里，包括源码")
 - 文章：[Tinker官方文章](https://github.com/Tencent/tinker/wiki "wiki")
 - Tinker源码：[https://github.com/Tencent/tinker](https://github.com/Tencent/tinker)
 
-## 3.6 阿里Sophix ##
+## 3.6 阿里Sophix
 
-###原理(双剑合璧)：###
+### 原理(双剑合璧)：
 ![](/picture/hotfix/18.png)
 
-###优化Andfix（突破底层结构差异，解决稳定性问题）：###
+### 优化Andfix（突破底层结构差异，解决稳定性问题）：
 
 ----------
 
@@ -227,7 +227,7 @@
 
 ![](/picture/hotfix/19.png)
 
-###突破QQ和Tinker的缺陷###
+### 突破QQ和Tinker的缺陷
 
 ----------
 
@@ -244,7 +244,7 @@
 
 ![](/picture/hotfix/22.png)
 
-###资源修复另辟蹊径###
+### 资源修复另辟蹊径
 
 ----------
 
@@ -254,7 +254,7 @@
 **Sophix资源修复方案**
 ![](/picture/hotfix/24.png)
 
-###SO修复另辟蹊径###
+### SO修复另辟蹊径
 
 ----------
 
@@ -280,7 +280,7 @@
 ## 来自[蘑菇街 Android 热修复探索之路](https://mp.weixin.qq.com/s/GuzbU1M1LY1VKmN7PyVbHQ)
 ![](http://images2017.cnblogs.com/blog/823551/201801/823551-20180119181035646-1613402870.png)
 
-## 其他文章 ##
+## 其他文章
 
 浅谈Android热修复：
 
