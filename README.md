@@ -23,8 +23,7 @@ Android收藏夹，整理一些比较有用的文章，工具（未完成，持�
 - [Android热修复技术原理（最新最全）](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Android%E7%83%AD%E4%BF%AE%E5%A4%8D%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86%EF%BC%88%E6%9C%80%E6%96%B0%E6%9C%80%E5%85%A8%EF%BC%89.md)
 
 ## 插件化
-
-- 插件化框架
+- [插件化框架](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Plugin.md)
 
 ## 性能优化
 - [Android性能优化典范](http://hukai.me/)
@@ -40,10 +39,11 @@ Android收藏夹，整理一些比较有用的文章，工具（未完成，持�
 - [android在线反编译-Android APK Decompiler](http://www.decompileandroid.com/)
 
 # 编程语言学习
-- Python
+- [Python](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Python.md)
+- [Kotlin](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Kotlin.md)
 
 # 编译脚本
-- Gradle
+- [Gradle](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Gradle.md)
 
 # 机器学习
 - [TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/get_started/introduction.html)
