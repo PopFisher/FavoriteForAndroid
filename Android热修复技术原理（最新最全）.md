@@ -281,12 +281,9 @@
 ![](http://images2017.cnblogs.com/blog/823551/201801/823551-20180119181035646-1613402870.png)
 
 ## 其他文章
-
-浅谈Android热修复：
-
-- [http://blog.csdn.net/caihongdao123/article/details/52051799](http://blog.csdn.net/caihongdao123/article/details/52051799)
-
-- Android 热修复专题：支付宝、淘宝、微信、QQ空间、饿了么、美丽说蘑菇街、美团大众点评方案集 [https://zhuanlan.zhihu.com/p/25863920](https://zhuanlan.zhihu.com/p/25863920 "Android 热修复专题：支付宝、淘宝、微信、QQ空间、饿了么、美丽说蘑菇街、美团大众点评方案集合")
+- [浅谈Android热修复](http://blog.csdn.net/caihongdao123/article/details/52051799)
+- [Android热修复原理（一）热修复框架对比和代码修复](https://juejin.im/post/5aa7598b51882555731bca9e)
+- [Android 热修复专题：支付宝、淘宝、微信、QQ空间、饿了么、美丽说蘑菇街、美团大众点评方案集](https://zhuanlan.zhihu.com/p/25863920 "Android 热修复专题：支付宝、淘宝、微信、QQ空间、饿了么、美丽说蘑菇街、美团大众点评方案集合")
 ![](http://images2017.cnblogs.com/blog/823551/201801/823551-20180119174807209-784087153.jpg)
 
 # 六、总结
