@@ -20,6 +20,22 @@ Android收藏夹，整理一些比较有用的文章，工具（未完成，持�
 - [技术小黑屋](http://droidyue.com/)
 
 ## 热修复
+&emsp;**开源框架汇总如下：**
+
+- Dexposed：[https://github.com/alibaba/dexposed](https://github.com/alibaba/dexposed)
+- AndFix：[https://github.com/alibaba/AndFix](https://github.com/alibaba/AndFix)
+- Nuwa：[https://github.com/jasonross/Nuwa](https://github.com/jasonross/Nuwa)
+- HotFix：[https://github.com/dodola/HotFix](https://github.com/dodola/HotFix)
+- DroidFix：[https://github.com/bunnyblue/DroidFix](https://github.com/bunnyblue/DroidFix)
+- Robust：[https://github.com/Meituan-Dianping/Robust](https://github.com/Meituan-Dianping/Robust)
+- RocooFix：[https://github.com/dodola/RocooFix](https://github.com/dodola/RocooFix)
+- Aceso：[https://github.com/meili/Aceso](https://github.com/meili/Aceso)
+- Amigo：[https://github.com/eleme/Amigo](https://github.com/eleme/Amigo)
+- Tinker：[https://github.com/Tencent/tinker](https://github.com/Tencent/tinker)
+
+----------
+&emsp;**各框架对比以及技术原理请阅读下文**
+
 - [Android热修复技术原理（最新最全）](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Android%E7%83%AD%E4%BF%AE%E5%A4%8D%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86%EF%BC%88%E6%9C%80%E6%96%B0%E6%9C%80%E5%85%A8%EF%BC%89.md)
 
 ## 插件化
