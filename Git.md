@@ -13,3 +13,4 @@
 - [git/github学习笔记 - 虫师 - 博客园](http://www.cnblogs.com/fnng/archive/2011/08/25/2153807.html)
 - [GitHub超详细图文攻略 - Git客户端下载安装 GitHub提交修改源码工作流程 Git分支 标签 过滤 Git版本工作流](http://blog.csdn.net/vipzjyno1/article/details/22098621)
 - [git-osc - 代码托管 - 开源中国社区](http://git.oschina.net/oschina/git-osc/wikis/Home)
+- [史上最浅显易懂的Git教程（廖雪峰的官方网站）](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)

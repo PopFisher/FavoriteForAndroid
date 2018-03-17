@@ -58,6 +58,7 @@ Android收藏夹，整理一些比较有用的精品网站，博客，工具（�
 # 编程语言学习
 - [Python](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Python.md)
 - [Kotlin](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Kotlin.md)
+- [JavaScript](https://github.com/PopFisher/FavoriteForAndroid/blob/master/JavaScript.md)
 
 # 编译脚本
 - [Gradle](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Gradle.md)
