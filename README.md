@@ -14,7 +14,7 @@ Android收藏夹，整理一些比较有用的精品网站，博客，工具（�
 - [Android Studio 中文社区](http://www.android-studio.org/)
 - [Free Android Icons - 1000+ icons for your App -> 很多很漂亮的App图标](http://www.icons4android.com/)
 - [Android军火库 -> Android developer portal with tools, libraries, and apps -> 可以搜到很多实用的Android项目](https://android-arsenal.com/)
-- [收集整理Android开发所需的Android SDK、开发中用到的工具、Android开发教程、Android设计规范，免费的设计素材等。](https://github.com/inferjay/AndroidDevTools)
+- [收集整理Android开发所需的Android SDK、开发中用到的工具、开发教程、设计规范，免费的设计素材等。](https://github.com/inferjay/AndroidDevTools)
 ## 精品博客
 - [老罗的Android之旅 -> 很全面的Android教程](http://blog.csdn.net/luoshengyang?viewmode=contents)
 - [技术小黑屋 -> 这个博主写的文章质量很高](http://droidyue.com/)
@@ -63,18 +63,10 @@ Android收藏夹，整理一些比较有用的精品网站，博客，工具（�
 # 编译脚本
 - [Gradle](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Gradle.md)
 
-# 机器学习
-- [TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/get_started/introduction.html)
-- [深度学习框架比较：Deeplearning4j、Torch、Theano、Caffe和TensorFlow - Deeplearning4j: Open-source, Distributed Deep Learning for the JVM](https://deeplearning4j.org/cn/zh-compare-dl4j-torch7-pylearn)
-- [斯坦福大学公开课 ：机器学习课程_机器学习的动机与应用_网易公开课](http://open.163.com/movie/2008/1/M/C/M6SGF6VB4_M6SGHFBMC.html)
-
-# 区块链（blockchain）
-- [深入浅出区块链](https://learnblockchain.cn/)
-- [区块链理论学习入门指南 – 代码家](https://daimajia.com/2017/08/24/how-to-start-blockchain-learning)
-
-# 计算机视频教程网
+# 相关教程网
 - [易百教程 -> 专注于IT教程和实例](http://www.yiibai.com/)
 - [AS&Gradle视频教程](http://ask.android-studio.org/?/explore/category-video)
+- [W3Cschool -> 学编程，从w3cscholl开始](https://www.w3cschool.cn/)
 
 # 精品网站
 - [SegmentFault -> 每个月帮助 1000 万的开发者解决各种各样的技术问题。并助力他们在技术能力、职业生涯、影响力上获得提升。](https://segmentfault.com/)
@@ -96,3 +88,12 @@ Android收藏夹，整理一些比较有用的精品网站，博客，工具（�
 
 # 项目管理
 - [Git](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Git.md)
+
+# 机器学习
+- [TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/get_started/introduction.html)
+- [深度学习框架比较：Deeplearning4j、Torch、Theano、Caffe和TensorFlow - Deeplearning4j: Open-source, Distributed Deep Learning for the JVM](https://deeplearning4j.org/cn/zh-compare-dl4j-torch7-pylearn)
+- [斯坦福大学公开课 ：机器学习课程_机器学习的动机与应用_网易公开课](http://open.163.com/movie/2008/1/M/C/M6SGF6VB4_M6SGHFBMC.html)
+
+# 区块链（blockchain）
+- [深入浅出区块链](https://learnblockchain.cn/)
+- [区块链理论学习入门指南 – 代码家](https://daimajia.com/2017/08/24/how-to-start-blockchain-learning)
