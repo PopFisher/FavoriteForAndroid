@@ -90,6 +90,9 @@ Android收藏夹，整理一些比较有用的精品网站，博客，工具（�
 # 项目管理
 - [Git](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Git.md)
 
+# 小游戏开发（微信小游戏，FB小游戏）
+- [微信小游戏](https://github.com/PopFisher/FavoriteForAndroid/blob/master/LightGames.md)
+ 
 # 机器学习
 - [TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/get_started/introduction.html)
 - [深度学习框架比较：Deeplearning4j、Torch、Theano、Caffe和TensorFlow - Deeplearning4j: Open-source, Distributed Deep Learning for the JVM](https://deeplearning4j.org/cn/zh-compare-dl4j-torch7-pylearn)
