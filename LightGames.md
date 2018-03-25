@@ -8,6 +8,8 @@
 - LayaBox：[https://ldc.layabox.com/doc/?nav=zh-as-3-4-5](https://ldc.layabox.com/doc/?language=en&nav=en-as-5-0-1)
 - Unity：[https://unity3d.com/cn/](https://unity3d.com/cn/)
 ### Egret
-- Egret官网：[http://developer.egret.com/cn/](http://developer.egret.com/cn/)
-- Egret开发文档：[http://developer.egret.com/cn/github/egret-docs/Engine2D/facebookInstantGames/index.html](http://developer.egret.com/cn/github/egret-docs/Engine2D/facebookInstantGames/index.html)
+- Egret官网（下载地址）：[https://www.egret.com/cn/](https://www.egret.com/cn/)
+- Egret开发者官网：[http://developer.egret.com/cn/](http://developer.egret.com/cn/)
+- Egret开发微信小游戏文档：[http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/introduction/index.html](http://developer.egret.com/cn/github/egret-docs/Engine2D/minigame/introduction/index.html)
+- Egret开发FaceBook游戏文档：[http://developer.egret.com/cn/github/egret-docs/Engine2D/facebookInstantGames/index.html](http://developer.egret.com/cn/github/egret-docs/Engine2D/facebookInstantGames/index.html)
 - 绘制API：[https://html.spec.whatwg.org/multipage/canvas.html?t=201832#2dcontext](https://html.spec.whatwg.org/multipage/canvas.html?t=201832#2dcontext)
