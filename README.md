@@ -60,6 +60,8 @@ Android收藏夹，整理一些比较有用的精品网站，博客，工具（�
 - [Kotlin](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Kotlin.md)
 - [JavaScript](https://github.com/PopFisher/FavoriteForAndroid/blob/master/JavaScript.md)
 - [Groovy](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Groovy.md)
+- [Golang](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Golang.md)
+- [TypeScript](https://github.com/PopFisher/FavoriteForAndroid/blob/master/TypeScript.md)
 
 # 编译脚本
 - [Gradle](https://github.com/PopFisher/FavoriteForAndroid/blob/master/Gradle.md)
