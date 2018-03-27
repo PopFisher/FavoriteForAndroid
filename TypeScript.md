@@ -3,7 +3,8 @@
 ## TypeScript-JavaScript的超集
 
 ## 官方资料
-- 官方网址：[http://www.typescriptlang.org/](http://www.typescriptlang.org/)
+- 官址：[http://www.typescriptlang.org/](http://www.typescriptlang.org/)
+- 官网（中文）：[https://www.tslang.cn/index.html](https://www.tslang.cn/index.html)
 
 
 ## 快速入门指南
