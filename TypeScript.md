@@ -15,9 +15,9 @@
 
 ## 开发工具（IDE）
 - [官网推荐工具列表](http://www.typescriptlang.org/#download-links)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Node.js（NPM）](https://www.npmjs.com/get-npm)
-- [WebStorm](https://www.jetbrains.com/webstorm/)
+- [Node.js（已经集成了NPM）](https://www.npmjs.com/get-npm)
+- [Visual Studio Code](https://code.visualstudio.com/) => [搭建TypeScript开发环境](https://segmentfault.com/a/1190000006124164)
+- [WebStorm](https://www.jetbrains.com/webstorm/) => [搭建TypeScript开发环境](https://blog.csdn.net/sujun10/article/details/54171394)
 
 ### Visual Studio Code
 - Code editing Redefined.
