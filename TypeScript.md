@@ -36,3 +36,4 @@
 - The smartest JavaScript IDE
 - Powerful IDE for modern JavaScript development
 - [WebStorm 2017，2018 激活方法](https://blog.csdn.net/jiangxinyu50/article/details/79104016)
+- [WebStorm 2017 激活破解方法大全](https://blog.csdn.net/voke_/article/details/76418116)
