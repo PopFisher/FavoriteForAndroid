@@ -17,3 +17,5 @@
 - cocos2d-x：[http://www.cocos2d-x.org/](http://www.cocos2d-x.org/)
 - [Cocos2d-x v3.16开发手册](http://docs.cocos.com/cocos2d-x/manual/zh/)
 - [Cocos Creator v1.9.x 用户手册](http://docs.cocos.com/creator/manual/zh/)
+- [Cocos Creator 入门](http://docs.cocos.com/creator/manual/zh/getting-started/)
+- [Cocos Creator + TypeScript 入门教程](https://blog.csdn.net/potato47/article/details/79254524)
