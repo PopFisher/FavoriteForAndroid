@@ -21,3 +21,16 @@
 - [新手教程 | Cocos Creator 调试入门（使用Chrome浏览器的开发工具）](http://forum.cocos.com/t/cocos-creator/56746/1)
 - [调试Cocos Creator项目的两种方式](https://blog.csdn.net/stillwater123/article/details/79234459)
 - [Cocos Creator + TypeScript 入门教程](https://blog.csdn.net/potato47/article/details/79254524)
+
+## 网络协议
+- [MQTT](http://mqtt.org/)
+
+### MQTT
+- [MQTT协议中文版](https://mcxiaoke.gitbooks.io/mqtt-cn/content/mqtt/01-Introduction.html)
+- [初识 MQTT（为什么 MQTT 是最适合物联网的网络协议）](https://www.ibm.com/developerworks/cn/iot/iot-mqtt-why-good-for-iot/index.html?ca=drs-&utm_source=tuicool&utm_medium=referral)
+- [MQTT.js](https://www.npmjs.com/package/mqtt)
+- [Eclipse Paho JavaScript client](https://eclipse.org/paho/clients/js/)
+- [mqttws31.js 在typescript中使用](https://github.com/icanos/ng2-mqtt/blob/master/README.md)
+
+## 服务端框架
+- [mqant：一款基于Golang语言的简洁,高效,高性能的分布式游戏服务器框架](https://github.com/liangdas/mqant)
