@@ -17,6 +17,7 @@
 - cocos2d-x：[http://www.cocos2d-x.org/](http://www.cocos2d-x.org/)
 - [Cocos2d-x v3.16开发手册](http://docs.cocos.com/cocos2d-x/manual/zh/)
 - [Cocos Creator v1.9.x 用户手册](http://docs.cocos.com/creator/manual/zh/)
+- [Cocos 视频教程](http://docs.cocos.com/creator/manual/zh/video-tutorial/)
 - [Cocos Creator 入门](http://docs.cocos.com/creator/manual/zh/getting-started/)
 - [新手教程 | Cocos Creator 调试入门（使用Chrome浏览器的开发工具）](http://forum.cocos.com/t/cocos-creator/56746/1)
 - [调试Cocos Creator项目的两种方式](https://blog.csdn.net/stillwater123/article/details/79234459)
